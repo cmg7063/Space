@@ -84,6 +84,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AgentMovement.cs" />
     <Compile Include="Assets\Scripts\Untitled.cs" />
   </ItemGroup>
   <ItemGroup>
