@@ -54,8 +54,10 @@
      <Compile Include="Assets\GalaxyBox2\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Scripts\AgentMovement.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
+     <Compile Include="Assets\Scripts\HumanoidAI.cs" />
      <Compile Include="Assets\Scripts\SmoothFollow.cs" />
      <Compile Include="Assets\Scripts\sphereBobbing.cs" />
+     <Compile Include="Assets\TestingSomething.cs" />
      <None Include="Assets\Shaders\PlanetSpecular.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Scifi Asset Pack\Readme.txt" />

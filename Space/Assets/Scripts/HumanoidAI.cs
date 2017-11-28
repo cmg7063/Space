@@ -90,6 +90,7 @@ public class HumanoidAI : MonoBehaviour
                 targetIndex = GetClosestWaypointOutOfPlayerVision();
             }
 
+			if(targetIndex != -1)
             agent.destination = coverLocations[ targetIndex ];
 
             //https://answers.unity.com/questions/324589/how-can-i-tell-when-a-navmesh-has-reached-its-dest.html
@@ -177,8 +178,16 @@ public class HumanoidAI : MonoBehaviour
         Vector3 direction = playerEye - eye;
         RaycastHit hit;
         Physics.Raycast( eye, direction, out hit);
-        
-        return if(hit.transform.tag == "Player");
+
+		if (Physics.Raycast (eye, direction, out hit)) 
+		{
+			return (hit.transform.tag == "Player");
+		} 
+		else 
+		{
+			return false;
+		}
+
     }
 
     int GetClosestWaypoint(List<Vector3> list)
@@ -216,14 +225,16 @@ public class HumanoidAI : MonoBehaviour
                 Vector3 direction = playerEye - eye;
                 
                 RaycastHit hit;
-                Physics.Raycast( playerEye, direction, out hit);
-
+				if (Physics.Raycast (playerEye, direction, out hit)) 
+				{
+					if( (hit.transform.tag != "Player") )
+					{
+						index = i;
+						distanceToClosest = Vector3.Distance( transform.position, coverLocations[ i ] );
+					}
+				} 
                 //get cover location where the player cant see the AI 
-                if( !(hit.transform.tag == "Player") )
-                {
-                    index = i;
-                    distanceToClosest = Vector3.Distance( transform.position, coverLocations[ i ] );
-                }
+                
             }
         }
 
