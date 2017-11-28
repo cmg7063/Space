@@ -10,6 +10,8 @@ public class HumanoidAI : MonoBehaviour
     private int targetIndex = -1;//cover
     private int patrolIndex = -1;
 
+	private List<Ray> DebugRays = new List<Ray> ();
+
 
     public GameObject player;
 
@@ -151,7 +153,10 @@ public class HumanoidAI : MonoBehaviour
         {
             agent.SetDestination( transform.position );
         }
-
+		for( int index = 0; index < DebugRays.Count; index++)
+		{
+			Debug.DrawRay(DebugRays[index].origin, DebugRays[index].direction);
+		}
         agent.speed = speed;
         previousState = state;
     }
@@ -225,12 +230,12 @@ public class HumanoidAI : MonoBehaviour
                 Vector3 direction = playerEye - eye;
                 
                 RaycastHit hit;
+				DebugRays.Add (new Ray (playerEye, direction));
 				if (Physics.Raycast (playerEye, direction, out hit)) 
 				{
-					if( (hit.transform.tag != "Player") )
-					{
+					if ((hit.transform.tag != "Player")) {
 						index = i;
-						distanceToClosest = Vector3.Distance( transform.position, coverLocations[ i ] );
+						distanceToClosest = Vector3.Distance (transform.position, coverLocations [i]);
 					}
 				} 
                 //get cover location where the player cant see the AI 
