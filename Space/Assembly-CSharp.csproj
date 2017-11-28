@@ -51,9 +51,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\GalaxyBox2\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Scripts\AgentMovement.cs" />
-     <Compile Include="Assets\Scripts\Untitled.cs" />
+     <Compile Include="Assets\Scripts\GameController.cs" />
+     <Compile Include="Assets\Scripts\SmoothFollow.cs" />
+     <Compile Include="Assets\Scripts\sphereBobbing.cs" />
+     <None Include="Assets\Shaders\PlanetSpecular.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Scifi Asset Pack\Readme.txt" />
+     <None Include="Assets\Shaders\PlanetParallaxSpecular.shader" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />

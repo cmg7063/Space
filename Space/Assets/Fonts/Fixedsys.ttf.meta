@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 48b8bebb19f75f2499d7eac4c9ddb3d4
+timeCreated: 1511836279
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Fixedsys Excelsior 3.01
+  fontNames:
+  - Fixedsys Excelsior 3.01
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
