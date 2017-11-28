@@ -175,8 +175,10 @@ public class HumanoidAI : MonoBehaviour
         playerEye.y = GetGroundYValue( playerEye ) + playerHeight;
 
         Vector3 direction = playerEye - eye;
-
-        return Physics.Raycast( eye, direction);
+        RaycastHit hit;
+        Physics.Raycast( eye, direction, out hit);
+        
+        return if(hit.transform.tag == "Player");
     }
 
     int GetClosestWaypoint(List<Vector3> list)
@@ -211,12 +213,13 @@ public class HumanoidAI : MonoBehaviour
 
                 Vector3 playerEye = player.transform.position;
                 playerEye.y = GetGroundYValue( playerEye ) + playerHeight;
-
                 Vector3 direction = playerEye - eye;
                 
+                RaycastHit hit;
+                Physics.Raycast( playerEye, direction, out hit);
 
                 //get cover location where the player cant see the AI 
-                if( !Physics.Raycast( eye, direction ) )
+                if( !(hit.transform.tag == "Player") )
                 {
                     index = i;
                     distanceToClosest = Vector3.Distance( transform.position, coverLocations[ i ] );
