@@ -1,8 +1,0 @@
-sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/NavMesh.unity
-=======
-- path: Assets/Scenes/FiringTest.unity
->>>>>>> 5a6d96c29e6a384529c6eb02fa1e00297402a1f7
-  isLoaded: 1
-  isActive: 1
