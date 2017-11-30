@@ -21,7 +21,7 @@ public class HumanoidAI : MonoBehaviour
     private float aiHeight = 2.0f;
     private float playerHeight = 2.0f;
 
-    private float speed;
+    private float speed = 3.5f;
 
     NavMeshAgent agent;
     enum HumanoidAIState
@@ -43,7 +43,6 @@ public class HumanoidAI : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        state = HumanoidAIState.Patrolling;
         agent = GetComponent<NavMeshAgent>();
 
         foreach(GameObject waypoint in GameObject.FindGameObjectsWithTag("CoverWaypoint"))
@@ -66,6 +65,7 @@ public class HumanoidAI : MonoBehaviour
         { 
             if( distanceToPlayer > alertRange )
             {
+                GotoNextPoint();
                 state = HumanoidAIState.Patrolling;
             }
             if( distanceToPlayer < alertRange && distanceToPlayer > shootRange)
@@ -82,9 +82,11 @@ public class HumanoidAI : MonoBehaviour
         if( state == HumanoidAIState.GoingToCover)
         {
             speed = 7.0f;   
+
             if(coverLocations.Count == 0)
             {
                 Debug.Log( "No cover waypoints set" );
+                targetIndex = -1;
                 state = HumanoidAIState.Patrolling;
             }
             if( targetIndex == -1 )
@@ -102,6 +104,7 @@ public class HumanoidAI : MonoBehaviour
                 {
                     if( !agent.hasPath || agent.velocity.sqrMagnitude == 0f )
                     {
+                        targetIndex = -1;
                         speed = 3.5f;
                         state = HumanoidAIState.Hiding;
                     }
@@ -110,6 +113,7 @@ public class HumanoidAI : MonoBehaviour
             //If on the way to cover the AI is in range and sees the player it switches to shooting
             if( distanceToPlayer < shootRange && CheckLineOfSightPlayer() )
             {
+                targetIndex = -1;
                 state = HumanoidAIState.Shooting;
             }
 
@@ -128,17 +132,14 @@ public class HumanoidAI : MonoBehaviour
         {
 
             agent.autoBraking = false;
-            if(patrolIndex == -1)
-            {
-               patrolIndex = GetClosestWaypoint( patrolWaypoints );
-            }
+
+            
 
             if( !agent.pathPending && agent.remainingDistance < 0.5f )
                 GotoNextPoint();
 
             if( distanceToPlayer < alertRange && distanceToPlayer > shootRange )
             {
-
                 agent.autoBraking = true;
                 state = HumanoidAIState.GoingToCover;
             }
@@ -164,6 +165,11 @@ public class HumanoidAI : MonoBehaviour
     {
         if( patrolWaypoints.Count == 0 )
             return;
+
+        if( patrolIndex == -1 )
+        {
+            patrolIndex = GetClosestWaypoint( patrolWaypoints );
+        }
 
         agent.destination = patrolWaypoints[ patrolIndex ];
 
