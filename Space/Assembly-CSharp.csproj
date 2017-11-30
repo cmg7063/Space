@@ -51,20 +51,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GalaxyBox2\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\JFekb\Sci-Fi MEGA PACK\Resource\ZE_MagicSphereDemoGUI.cs" />
+     <Compile Include="Assets\JFekb\Sci-Fi MEGA PACK\Resource\ZE_UVTextureAnimator.cs" />
      <Compile Include="Assets\Scripts\AgentMovement.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\HumanoidAI.cs" />
      <Compile Include="Assets\Scripts\SmoothFollow.cs" />
      <Compile Include="Assets\Scripts\sphereBobbing.cs" />
+     <Compile Include="Assets\Scripts\Target.cs" />
+     <Compile Include="Assets\Scripts\Weapon.cs" />
      <Compile Include="Assets\TestingSomething.cs" />
+     <None Include="Assets\Textures\muzzleflares\Readme.txt" />
      <None Include="Assets\Shaders\PlanetSpecular.shader" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+     <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
+     <None Include="Assets\JFekb\Sci-Fi MEGA PACK\Resource\Particle Alpha Blend.shader" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-     <None Include="Assets\Scifi Asset Pack\Readme.txt" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+     <None Include="Assets\JFekb\Sci-Fi MEGA PACK\Readme.txt" />
      <None Include="Assets\Shaders\PlanetParallaxSpecular.shader" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
