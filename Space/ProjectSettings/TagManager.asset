@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CoverWaypoint
   - PatrolWaypoint
+  - DebugWaypoint
   layers:
   - Default
   - TransparentFX
