@@ -54,13 +54,14 @@
      <Compile Include="Assets\JFekb\Sci-Fi MEGA PACK\Resource\ZE_MagicSphereDemoGUI.cs" />
      <Compile Include="Assets\JFekb\Sci-Fi MEGA PACK\Resource\ZE_UVTextureAnimator.cs" />
      <Compile Include="Assets\Scripts\AgentMovement.cs" />
+     <Compile Include="Assets\Scripts\AIWeapon.cs" />
+     <Compile Include="Assets\Scripts\DisplayAIState.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\HumanoidAI.cs" />
      <Compile Include="Assets\Scripts\SmoothFollow.cs" />
      <Compile Include="Assets\Scripts\sphereBobbing.cs" />
      <Compile Include="Assets\Scripts\Target.cs" />
      <Compile Include="Assets\Scripts\Weapon.cs" />
-     <Compile Include="Assets\TestingSomething.cs" />
      <None Include="Assets\Textures\muzzleflares\Readme.txt" />
      <None Include="Assets\Shaders\PlanetSpecular.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
