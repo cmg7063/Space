@@ -2967,51 +2967,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d3674a39890006488928fe2b850baa5, type: 2}
   m_IsPrefabParent: 0
-<<<<<<< HEAD
->>>>>>> e3b2aa1de6b1c62ed5141c165b5527759796ec39
-=======
---- !u!1001 &1245440803
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4081372180859582, guid: 8d3674a39890006488928fe2b850baa5, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -4.96
-      objectReference: {fileID: 0}
-    - target: {fileID: 4081372180859582, guid: 8d3674a39890006488928fe2b850baa5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 6.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 4081372180859582, guid: 8d3674a39890006488928fe2b850baa5, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4081372180859582, guid: 8d3674a39890006488928fe2b850baa5, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4081372180859582, guid: 8d3674a39890006488928fe2b850baa5, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4081372180859582, guid: 8d3674a39890006488928fe2b850baa5, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4081372180859582, guid: 8d3674a39890006488928fe2b850baa5, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4081372180859582, guid: 8d3674a39890006488928fe2b850baa5, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 8d3674a39890006488928fe2b850baa5, type: 2}
-  m_IsPrefabParent: 0
 >>>>>>> e3b2aa1de6b1c62ed5141c165b5527759796ec39
 --- !u!1001 &1257639706
 Prefab:
@@ -4204,7 +4159,6 @@ Transform:
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 <<<<<<< HEAD
-<<<<<<< HEAD
 --- !u!1001 &1893929502
 Prefab:
   m_ObjectHideFlags: 0
@@ -4312,8 +4266,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
-=======
->>>>>>> e3b2aa1de6b1c62ed5141c165b5527759796ec39
 =======
 >>>>>>> e3b2aa1de6b1c62ed5141c165b5527759796ec39
 --- !u!1001 &1897366049
