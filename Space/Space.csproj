@@ -93,6 +93,7 @@
     <Compile Include="Assets\Scripts\HumanoidAI.cs" />
     <Compile Include="Assets\Scripts\ImpactEffect.cs" />
     <Compile Include="Assets\Scripts\PickupItems.cs" />
+    <Compile Include="Assets\Scripts\RotateItem.cs" />
     <Compile Include="Assets\Scripts\SmoothFollow.cs" />
     <Compile Include="Assets\Scripts\sphereBobbing.cs" />
     <Compile Include="Assets\Scripts\Target.cs" />

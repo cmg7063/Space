@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4212203115884240}
   - component: {fileID: 33560542458652396}
   - component: {fileID: 23223194266005792}
+  - component: {fileID: 114487542623752528}
   m_Layer: 0
   m_Name: Pistol_Mag
   m_TagString: Untagged
@@ -44,7 +45,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1904021542865878
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,6 +143,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1003620213061370}
   m_Mesh: {fileID: 4300000, guid: f037c2655a4b3864f977168e0a8a1b06, type: 3}
+--- !u!114 &114487542623752528
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1003620213061370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a048f2912164fd447851bd14147a0ecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topPos: 0
+  botPos: 0
+  rising: 0
 --- !u!114 &114850606546699362
 MonoBehaviour:
   m_ObjectHideFlags: 1
