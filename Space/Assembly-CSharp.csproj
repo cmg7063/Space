@@ -55,6 +55,7 @@
      <Compile Include="Assets\JFekb\Sci-Fi MEGA PACK\Resource\ZE_UVTextureAnimator.cs" />
      <Compile Include="Assets\Scripts\AgentMovement.cs" />
      <Compile Include="Assets\Scripts\AIWeapon.cs" />
+     <Compile Include="Assets\Scripts\ChangeScene.cs" />
      <Compile Include="Assets\Scripts\DisplayAIState.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\HumanoidAI.cs" />

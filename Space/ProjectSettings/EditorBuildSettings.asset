@@ -17,3 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/level2.unity
     guid: beb3fa14bdb50f7409c752c7cb764f82
+  - enabled: 1
+    path: Assets/Scenes/WeaponFireDemoScene.unity
+    guid: 38da034b9357fd24b91dc49eed900ae9
+  - enabled: 1
+    path: Assets/Scenes/NavMesh.unity
+    guid: 12ab19da2bf65b242936b38b4624626a
