@@ -58,10 +58,14 @@
      <Compile Include="Assets\Scripts\DisplayAIState.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\HumanoidAI.cs" />
+     <Compile Include="Assets\Scripts\ImpactEffect.cs" />
+     <Compile Include="Assets\Scripts\PickupItems.cs" />
+     <Compile Include="Assets\Scripts\RotateItem.cs" />
      <Compile Include="Assets\Scripts\SmoothFollow.cs" />
      <Compile Include="Assets\Scripts\sphereBobbing.cs" />
      <Compile Include="Assets\Scripts\Target.cs" />
      <Compile Include="Assets\Scripts\Weapon.cs" />
+     <Compile Include="Assets\Scripts\Weaponswitching.cs" />
      <None Include="Assets\Textures\muzzleflares\Readme.txt" />
      <None Include="Assets\Shaders\PlanetSpecular.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
