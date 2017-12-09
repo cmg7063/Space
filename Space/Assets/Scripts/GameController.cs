@@ -15,12 +15,12 @@ public class GameController : MonoBehaviour
 
     public void Instructions()
     {
-        SceneManager.LoadScene("Controls");
+        SceneManager.LoadScene("WeaponFireDemoScene");
     }
 
     public void Play()
     {
-        SceneManager.LoadScene("level1");
+        SceneManager.LoadScene("Intro");
     }
 
     public void Quit()
@@ -46,6 +46,13 @@ public class GameController : MonoBehaviour
             if (Input.anyKey)
             {
                 SceneManager.LoadScene("Menu");
+            }
+        }
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Intro"))
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                SceneManager.LoadScene("level1");
             }
         }
     }
