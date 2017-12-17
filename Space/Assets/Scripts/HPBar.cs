@@ -31,7 +31,7 @@ public class HPBar : MonoBehaviour
         //temp += player.transform.position;
         //temp.y = ai.transform.position.y + 1.1f + (player.transform.position.y/2.0f)-1.0f;
         Vector3 temp = ai.transform.position;
-        temp.y += 1.1f;
+        temp.y += 1.6f;
         transform.position = temp;
         //transform.position.Scale()
         transform.LookAt( Camera.main.transform.position, -Vector3.up );
