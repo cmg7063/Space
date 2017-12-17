@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEditor.Animations;
 
 public class HumanoidAI : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class HumanoidAI : MonoBehaviour
      
 
     public GameObject player;
+    public GameObject healthBar;
 
     public float shootRange = 25.0f;
     public float alertRange = 40.0f;
@@ -31,6 +33,9 @@ public class HumanoidAI : MonoBehaviour
 
     private float debugTimer = 0.0f;
     private float health = 100.0f;
+    private float healthBarWidth;
+
+    public Animator pAnimator;
 
     NavMeshAgent agent;
     public enum HumanoidAIState
@@ -56,14 +61,17 @@ public class HumanoidAI : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        healthBarWidth = healthBar.GetComponent<SpriteRenderer>().sprite.rect.width;
         agent = GetComponent<NavMeshAgent>();
-
+        //pAnimator = GetComponentInChildren<Animator>();
         //Ensures raycast does not miss when checking line of sight from the top of the models
-        
-        //QUESTION Turns out player sinks into the ground by about .02f units for some reason
+
+        //QUESTION  player sinks into the ground by about .02f units for some reason
         
         aiHeight -= .1f;
         playerHeight -= .1f;
+
+        healthBar.GetComponent<SpriteRenderer>().color = new Color( 20.0f / 255.0f, 184.0f / 255.0f, 1.0f );
 
         foreach(GameObject waypoint in GameObject.FindGameObjectsWithTag("CoverWaypoint"))
         {
@@ -75,39 +83,68 @@ public class HumanoidAI : MonoBehaviour
         }
     }
 
+    void UpdateHealth()
+    {
+        Sprite temp = healthBar.GetComponent<SpriteRenderer>().sprite;
+
+        float newWidth = healthBarWidth * (health / 100.0f);
+        temp = Sprite.Create( temp.texture, 
+            new Rect( 0.0f, 0.0f, newWidth, temp.rect.height ), 
+            new Vector2( 0.5f, 0.5f ), 100.0f );
+        
+        healthBar.GetComponent<SpriteRenderer>().sprite = temp;
+        if(health <= 33.3f)
+        {
+            healthBar.GetComponent<SpriteRenderer>().color = new Color( 1.0f, 0.0f, 0.0f );
+        }
+        
+    }
+
     // Update is called once per frame
     void Update()
     {
         distanceToPlayer = Vector3.Distance( player.transform.position, transform.position );
 
+        //Debug 
+        //TakeDamage( Time.deltaTime * 10.0f );
+
+        //Walk isn't working? and shooting is stupid
+        //doesn't really fit at all since his arm is a cannon thing and he decides to crouch for some reason before every shot
+
         #region speed_and_variables
         //separating speed out from the other places for readability
         if( state == HumanoidAIState.Unassigned )
         {
+            pAnimator.Play( "Idle");
             agent.autoBraking = true;
             agent.updateRotation = true;
             speed = 0.0f;
         }
         else if( state == HumanoidAIState.GoingToCover )
         {
+            pAnimator.Play( "Run" );
             agent.autoBraking = true;
             agent.updateRotation = true;
             speed = 9.0f;
         }
         else if( state == HumanoidAIState.Hiding )
         {
+            pAnimator.Play( "Idle" );
             agent.autoBraking = true;
             agent.updateRotation = true;
             speed = 0.0f;
         }
         else if( state == HumanoidAIState.Patrolling )
         {
+            
+            pAnimator.Play( "Run" );
             agent.autoBraking = false;
             agent.updateRotation = true;
             speed = 3.5f;
         }
         else if( state == HumanoidAIState.Shooting )
         {
+            pAnimator.Play( "Walk");
             //testing braking here
             agent.autoBraking = false;
             agent.updateRotation = false;
@@ -636,7 +673,7 @@ public class HumanoidAI : MonoBehaviour
     public void TakeDamage( float amount )
     {
         health -= amount;
-
+        UpdateHealth();
         if( health <= 0.0f )
         {
             Destroy( gameObject );
