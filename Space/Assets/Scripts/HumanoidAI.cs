@@ -35,7 +35,7 @@ public class HumanoidAI : MonoBehaviour
     private float health = 100.0f;
     private float healthBarWidth;
 
-    public Animator pAnimator;
+    //public Animator pAnimator;
 
     NavMeshAgent agent;
     public enum HumanoidAIState
@@ -115,21 +115,21 @@ public class HumanoidAI : MonoBehaviour
         //separating speed out from the other places for readability
         if( state == HumanoidAIState.Unassigned )
         {
-            pAnimator.Play( "Idle");
+            //pAnimator.Play( "Idle");
             agent.autoBraking = true;
             agent.updateRotation = true;
             speed = 0.0f;
         }
         else if( state == HumanoidAIState.GoingToCover )
         {
-            pAnimator.Play( "Run" );
+            //pAnimator.Play( "Run" );
             agent.autoBraking = true;
             agent.updateRotation = true;
             speed = 9.0f;
         }
         else if( state == HumanoidAIState.Hiding )
         {
-            pAnimator.Play( "Idle" );
+            //pAnimator.Play( "Idle" );
             agent.autoBraking = true;
             agent.updateRotation = true;
             speed = 0.0f;
@@ -137,14 +137,14 @@ public class HumanoidAI : MonoBehaviour
         else if( state == HumanoidAIState.Patrolling )
         {
             
-            pAnimator.Play( "Run" );
+            //pAnimator.Play( "Run" );
             agent.autoBraking = false;
             agent.updateRotation = true;
             speed = 3.5f;
         }
         else if( state == HumanoidAIState.Shooting )
         {
-            pAnimator.Play( "Walk");
+            //pAnimator.Play( "Walk");
             //testing braking here
             agent.autoBraking = false;
             agent.updateRotation = false;

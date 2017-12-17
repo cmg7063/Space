@@ -142,8 +142,6 @@
   <ItemGroup>
     <None Include="Assets\JFekb\Sci-Fi MEGA PACK\Readme.txt" />
     <None Include="Assets\JFekb\Sci-Fi MEGA PACK\Resource\Particle Alpha Blend.shader" />
-    <None Include="Assets\Models\Cyborg\scenes\edits\OpenMayaErrorLog.txt" />
-    <None Include="Assets\Models\EscapePod\scenes\edits\OpenMayaErrorLog.txt" />
     <None Include="Assets\Shaders\PlanetParallaxSpecular.shader" />
     <None Include="Assets\Shaders\PlanetSpecular.shader" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
