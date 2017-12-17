@@ -92,7 +92,7 @@ public class AIWeapon : MonoBehaviour
             variationFactor = 1.0f;
         }
 
-        variationFactor *= 20.0f;
+        variationFactor *= 4.0f;
 
         variation *= variationFactor;
         

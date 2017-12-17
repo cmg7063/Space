@@ -30,6 +30,7 @@ public class HumanoidAI : MonoBehaviour
     private float speed = 3.5f;
 
     private float debugTimer = 0.0f;
+    private float health = 100.0f;
 
     NavMeshAgent agent;
     public enum HumanoidAIState
@@ -50,6 +51,7 @@ public class HumanoidAI : MonoBehaviour
     public HumanoidAIState state = HumanoidAIState.Unassigned;
     private HumanoidAIState previousState = HumanoidAIState.Unassigned;
     private HumanoidAIState stateLastFrame = HumanoidAIState.Unassigned;
+
 
     // Use this for initialization
     void Start()
@@ -233,8 +235,8 @@ public class HumanoidAI : MonoBehaviour
                     //thanks for making changing struct values so stupid
                     var temp0 = potentialPoints[0];
                     var temp1 = potentialPoints[1];
-                    temp0.y = GetGroundYValue( temp0 );
-                    temp1.y = GetGroundYValue( temp1 );
+                    //temp0.y = GetGroundYValue( temp0 );
+                    //temp1.y = GetGroundYValue( temp1 );
                     potentialPoints[ 0 ] = temp0;
                     potentialPoints[ 1 ] = temp1;
 
@@ -269,8 +271,8 @@ public class HumanoidAI : MonoBehaviour
                     Vector3 hit0 = nmHit0.position;
                     Vector3 hit1 = nmHit1.position;
 
-                    hit0.y = GetGroundYValue( hit0 );
-                    hit1.y = GetGroundYValue( hit1 );
+                    //hit0.y = GetGroundYValue( hit0 );
+                    //hit1.y = GetGroundYValue( hit1 );
 
                     if( length0 == length1 )
                     {
@@ -471,11 +473,11 @@ public class HumanoidAI : MonoBehaviour
     public Vector3 DirectionToPlayer()
     {
         Vector3 eye = new Vector3( transform.position.x,
-            GetGroundYValue(transform.position ) + aiHeight,
+            transform.position.y + aiHeight/2.0f,
             transform.position.z);
 
         Vector3 playerEye = player.transform.position;
-        playerEye.y = GetGroundYValue( playerEye ) + playerHeight;
+        playerEye.y = playerEye.y + playerHeight/2.0f;
 
         Vector3 direction = playerEye - eye;
         return direction;
@@ -490,12 +492,12 @@ public class HumanoidAI : MonoBehaviour
     public bool IsPlayerInLineOfSight()
     {
         //eye level
-        Vector3 eye = new Vector3(transform.position.x,
-            GetGroundYValue( transform.position ) + aiHeight,
-            transform.position.z);
+        Vector3 eye = new Vector3( transform.position.x,
+            transform.position.y + aiHeight/2.0f,
+            transform.position.z );
         
         Vector3 playerEye = player.transform.position;
-        playerEye.y = GetGroundYValue( playerEye ) + playerHeight;
+        playerEye.y = playerEye.y + playerHeight/2.0f;
 
         Vector3 direction = playerEye - eye;
         RaycastHit hit;
@@ -516,13 +518,14 @@ public class HumanoidAI : MonoBehaviour
     public Vector3 GetDirectionToPlayer()
     {
         Vector3 eye = new Vector3(transform.position.x,
-            GetGroundYValue( transform.position ) + aiHeight,
+            transform.position.y + aiHeight/2.0f,
             transform.position.z);
 
         Vector3 playerEye = player.transform.position;
-        playerEye.y = GetGroundYValue( playerEye ) + playerHeight;
-
-        return playerEye - eye;
+        playerEye.y = playerEye.y+ playerHeight/2.0f;
+        Vector3 result = playerEye - eye;
+        result.y = 0;
+        return result;
     }
 
     /// <summary>
@@ -561,11 +564,11 @@ public class HumanoidAI : MonoBehaviour
             {
                 Vector3 eye = new Vector3(
                     coverLocations[ i ].x,
-                    GetGroundYValue( coverLocations[ i ]) + aiHeight, 
+                    coverLocations[i].y + aiHeight, 
                     coverLocations[ i ].z);
 
                 Vector3 playerEye = player.transform.position;
-                playerEye.y = GetGroundYValue( playerEye ) + playerHeight;
+                playerEye.y = playerEye.y + playerHeight;
                 Vector3 direction = playerEye - eye;
                 
                 RaycastHit hit;
@@ -608,8 +611,7 @@ public class HumanoidAI : MonoBehaviour
     {
 
         Vector3 temp = transform.position;
-        temp.y = GetGroundYValue( temp );
-        temp.y += aiHeight;
+        temp.y += aiHeight/2.0f;
 
         return temp;
     }
@@ -629,6 +631,16 @@ public class HumanoidAI : MonoBehaviour
     public float GetShootRange()
     {
         return shootRange;
+    }
+
+    public void TakeDamage( float amount )
+    {
+        health -= amount;
+
+        if( health <= 0.0f )
+        {
+            Destroy( gameObject );
+        }
     }
 
 }
