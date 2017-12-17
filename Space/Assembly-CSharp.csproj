@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\ChangeScene.cs" />
      <Compile Include="Assets\Scripts\DisplayAIState.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
+     <Compile Include="Assets\Scripts\HPBar.cs" />
      <Compile Include="Assets\Scripts\HumanoidAI.cs" />
      <Compile Include="Assets\Scripts\ImpactEffect.cs" />
      <Compile Include="Assets\Scripts\IntroScript.cs" />

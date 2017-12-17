@@ -463,6 +463,10 @@ Prefab:
       propertyPath: m_Name
       value: CommStat1 - Menu here
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010235849866, guid: 8988f71b963cd5f42ae2af5fcc124bad, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8988f71b963cd5f42ae2af5fcc124bad, type: 2}
   m_IsPrefabParent: 0
@@ -768,7 +772,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1094416590
 Light:
   m_ObjectHideFlags: 0
