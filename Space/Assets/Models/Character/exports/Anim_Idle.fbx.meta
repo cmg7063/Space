@@ -1,0 +1,320 @@
+fileFormatVersion: 2
+guid: 8c1b41e5b786dff4ba23df5243e8c35d
+timeCreated: 1513545351
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: back_ctrl
+    100004: elbow_ctrl
+    100006: group1
+    100008: group2
+    100010: hip_ctrl
+    100012: ikHandle10
+    100014: ikHandle3
+    100016: ikHandle4
+    100018: ikHandle5
+    100020: ikHandle6
+    100022: ikHandle7
+    100024: ikHandle8
+    100026: ikHandle9
+    100028: L_elbow_ctrl
+    100030: L_ElbowCtrl
+    100032: L_foot_ctrl
+    100034: L_Hand
+    100036: L_Hand_jnt
+    100038: L_IKControl
+    100040: L_Index_01
+    100042: L_Index_02
+    100044: L_Index_02 1
+    100046: L_Index_02 2
+    100048: L_Index_03
+    100050: L_Index_03 1
+    100052: L_Index_03 2
+    100054: L_Index_04
+    100056: L_Index_05
+    100058: L_knee_ctrl
+    100060: L_Middle_01
+    100062: L_Middle_02
+    100064: L_Middle_03
+    100066: L_shoulder_ctrl
+    100068: L_Thumb_01
+    100070: L_Thumb_01 1
+    100072: L_Thumb_02
+    100074: L_Thumb_02 1
+    100076: L_Thumb_03
+    100078: L_Thumb_03 1
+    100080: L_wrist_ctrl
+    100082: LI_ankle
+    100084: LI_ball
+    100086: LI_base1
+    100088: LI_toe
+    100090: R_Hand
+    100092: R_Hand_jnt
+    100094: R_IKControl1
+    100096: R_shoulder_ctrl
+    100098: RI_ankle
+    100100: RI_ball
+    100102: RI_base
+    100104: RI_toe
+    100106: Rig:back_jnt
+    100108: Rig:chest_jnt
+    100110: Rig:hip_end_jnt
+    100112: Rig:hip_jnt
+    100114: Rig:L_ankle_jnt
+    100116: Rig:L_ball_jnt
+    100118: Rig:L_clavicle_jnt
+    100120: Rig:L_Elbow_jnt
+    100122: Rig:L_ElbowCtrl
+    100124: Rig:L_ElbowFK
+    100126: Rig:L_ElbowIK
+    100128: Rig:L_foot_ctrl
+    100130: Rig:L_Index_01
+    100132: Rig:L_Index_02
+    100134: Rig:L_Index_03
+    100136: Rig:L_Index_04
+    100138: Rig:L_knee_ctrl
+    100140: Rig:L_knee_jnt
+    100142: Rig:L_Pinky_01
+    100144: Rig:L_Pinky_02
+    100146: Rig:L_Pinky_03
+    100148: Rig:L_Pinky_04
+    100150: Rig:L_Shoulder_jnt
+    100152: Rig:L_ShoulderFK
+    100154: Rig:L_ShoulderIK
+    100156: Rig:L_thigh_jnt
+    100158: Rig:L_Thumb_01
+    100160: Rig:L_Thumb_02
+    100162: Rig:L_Thumb_03
+    100164: Rig:L_Thumb_04
+    100166: Rig:L_toe_jnt
+    100168: Rig:L_Wrist_jnt
+    100170: Rig:L_WristFK
+    100172: Rig:L_WristIK
+    100174: Rig:Main_ctrl
+    100176: Rig:R_ankle_jnt
+    100178: Rig:R_ball_jnt
+    100180: Rig:R_clavicle_jnt
+    100182: Rig:R_Elbow_jnt
+    100184: Rig:R_ElbowFK
+    100186: Rig:R_ElbowIK
+    100188: Rig:R_Index_01
+    100190: Rig:R_Index_02
+    100192: Rig:R_Index_03
+    100194: Rig:R_Index_04
+    100196: Rig:R_knee_jnt
+    100198: Rig:R_Pinky_01
+    100200: Rig:R_Pinky_02
+    100202: Rig:R_Pinky_03
+    100204: Rig:R_Pinky_04
+    100206: Rig:R_Shoulder_jnt
+    100208: Rig:R_ShoulderFK
+    100210: Rig:R_ShoulderIK
+    100212: Rig:R_thigh_jnt
+    100214: Rig:R_Thumb_01
+    100216: Rig:R_Thumb_02
+    100218: Rig:R_Thumb_03
+    100220: Rig:R_Thumb_04
+    100222: Rig:R_toe_jnt
+    100224: Rig:R_Wrist_jnt
+    100226: Rig:R_WristFK
+    100228: Rig:R_WristIK
+    100230: Rig:root_jnt
+    100232: Root_Ctrl
+    100234: wrist_ctrl
+    400000: //RootNode
+    400002: back_ctrl
+    400004: elbow_ctrl
+    400006: group1
+    400008: group2
+    400010: hip_ctrl
+    400012: ikHandle10
+    400014: ikHandle3
+    400016: ikHandle4
+    400018: ikHandle5
+    400020: ikHandle6
+    400022: ikHandle7
+    400024: ikHandle8
+    400026: ikHandle9
+    400028: L_elbow_ctrl
+    400030: L_ElbowCtrl
+    400032: L_foot_ctrl
+    400034: L_Hand
+    400036: L_Hand_jnt
+    400038: L_IKControl
+    400040: L_Index_01
+    400042: L_Index_02
+    400044: L_Index_02 1
+    400046: L_Index_02 2
+    400048: L_Index_03
+    400050: L_Index_03 1
+    400052: L_Index_03 2
+    400054: L_Index_04
+    400056: L_Index_05
+    400058: L_knee_ctrl
+    400060: L_Middle_01
+    400062: L_Middle_02
+    400064: L_Middle_03
+    400066: L_shoulder_ctrl
+    400068: L_Thumb_01
+    400070: L_Thumb_01 1
+    400072: L_Thumb_02
+    400074: L_Thumb_02 1
+    400076: L_Thumb_03
+    400078: L_Thumb_03 1
+    400080: L_wrist_ctrl
+    400082: LI_ankle
+    400084: LI_ball
+    400086: LI_base1
+    400088: LI_toe
+    400090: R_Hand
+    400092: R_Hand_jnt
+    400094: R_IKControl1
+    400096: R_shoulder_ctrl
+    400098: RI_ankle
+    400100: RI_ball
+    400102: RI_base
+    400104: RI_toe
+    400106: Rig:back_jnt
+    400108: Rig:chest_jnt
+    400110: Rig:hip_end_jnt
+    400112: Rig:hip_jnt
+    400114: Rig:L_ankle_jnt
+    400116: Rig:L_ball_jnt
+    400118: Rig:L_clavicle_jnt
+    400120: Rig:L_Elbow_jnt
+    400122: Rig:L_ElbowCtrl
+    400124: Rig:L_ElbowFK
+    400126: Rig:L_ElbowIK
+    400128: Rig:L_foot_ctrl
+    400130: Rig:L_Index_01
+    400132: Rig:L_Index_02
+    400134: Rig:L_Index_03
+    400136: Rig:L_Index_04
+    400138: Rig:L_knee_ctrl
+    400140: Rig:L_knee_jnt
+    400142: Rig:L_Pinky_01
+    400144: Rig:L_Pinky_02
+    400146: Rig:L_Pinky_03
+    400148: Rig:L_Pinky_04
+    400150: Rig:L_Shoulder_jnt
+    400152: Rig:L_ShoulderFK
+    400154: Rig:L_ShoulderIK
+    400156: Rig:L_thigh_jnt
+    400158: Rig:L_Thumb_01
+    400160: Rig:L_Thumb_02
+    400162: Rig:L_Thumb_03
+    400164: Rig:L_Thumb_04
+    400166: Rig:L_toe_jnt
+    400168: Rig:L_Wrist_jnt
+    400170: Rig:L_WristFK
+    400172: Rig:L_WristIK
+    400174: Rig:Main_ctrl
+    400176: Rig:R_ankle_jnt
+    400178: Rig:R_ball_jnt
+    400180: Rig:R_clavicle_jnt
+    400182: Rig:R_Elbow_jnt
+    400184: Rig:R_ElbowFK
+    400186: Rig:R_ElbowIK
+    400188: Rig:R_Index_01
+    400190: Rig:R_Index_02
+    400192: Rig:R_Index_03
+    400194: Rig:R_Index_04
+    400196: Rig:R_knee_jnt
+    400198: Rig:R_Pinky_01
+    400200: Rig:R_Pinky_02
+    400202: Rig:R_Pinky_03
+    400204: Rig:R_Pinky_04
+    400206: Rig:R_Shoulder_jnt
+    400208: Rig:R_ShoulderFK
+    400210: Rig:R_ShoulderIK
+    400212: Rig:R_thigh_jnt
+    400214: Rig:R_Thumb_01
+    400216: Rig:R_Thumb_02
+    400218: Rig:R_Thumb_03
+    400220: Rig:R_Thumb_04
+    400222: Rig:R_toe_jnt
+    400224: Rig:R_Wrist_jnt
+    400226: Rig:R_WristFK
+    400228: Rig:R_WristIK
+    400230: Rig:root_jnt
+    400232: Root_Ctrl
+    400234: wrist_ctrl
+    7400000: Idle
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
