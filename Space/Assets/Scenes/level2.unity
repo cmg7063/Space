@@ -8606,7 +8606,7 @@ Prefab:
     - target: {fileID: 114104770558936712, guid: 24e9d61ab1b23194cb69e4630e686794,
         type: 2}
       propertyPath: shootRange
-      value: 22
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24e9d61ab1b23194cb69e4630e686794, type: 2}
@@ -11178,7 +11178,7 @@ Prefab:
     - target: {fileID: 114104770558936712, guid: 24e9d61ab1b23194cb69e4630e686794,
         type: 2}
       propertyPath: shootRange
-      value: 22
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24e9d61ab1b23194cb69e4630e686794, type: 2}
