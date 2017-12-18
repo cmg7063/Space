@@ -55,6 +55,7 @@
      <Compile Include="Assets\JFekb\Sci-Fi MEGA PACK\Resource\ZE_UVTextureAnimator.cs" />
      <Compile Include="Assets\Scripts\AgentMovement.cs" />
      <Compile Include="Assets\Scripts\AIWeapon.cs" />
+     <Compile Include="Assets\Scripts\BossAI.cs" />
      <Compile Include="Assets\Scripts\ChangeScene.cs" />
      <Compile Include="Assets\Scripts\DisplayAIState.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
@@ -78,9 +79,7 @@
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
      <None Include="Assets\JFekb\Sci-Fi MEGA PACK\Readme.txt" />
-     <None Include="Assets\Models\Cyborg\scenes\edits\OpenMayaErrorLog.txt" />
      <None Include="Assets\Shaders\PlanetParallaxSpecular.shader" />
-     <None Include="Assets\Models\EscapePod\scenes\edits\OpenMayaErrorLog.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
