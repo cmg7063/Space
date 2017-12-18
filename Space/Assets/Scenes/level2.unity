@@ -8452,16 +8452,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114104770558936712, guid: 24e9d61ab1b23194cb69e4630e686794,
-        type: 2}
-      propertyPath: coverLocationsEditor.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114104770558936712, guid: 24e9d61ab1b23194cb69e4630e686794,
-        type: 2}
-      propertyPath: patrolWaypointsEditor.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4422930592211056, guid: 24e9d61ab1b23194cb69e4630e686794, type: 2}
       propertyPath: m_LocalPosition.x
       value: -30.118917
@@ -8493,11 +8483,6 @@ Prefab:
     - target: {fileID: 4422930592211056, guid: 24e9d61ab1b23194cb69e4630e686794, type: 2}
       propertyPath: m_RootOrder
       value: 23
-      objectReference: {fileID: 0}
-    - target: {fileID: 114104770558936712, guid: 24e9d61ab1b23194cb69e4630e686794,
-        type: 2}
-      propertyPath: customCover
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114104770558936712, guid: 24e9d61ab1b23194cb69e4630e686794,
         type: 2}
@@ -8537,20 +8522,6 @@ Prefab:
     - target: {fileID: 1198524467941778, guid: 24e9d61ab1b23194cb69e4630e686794, type: 2}
       propertyPath: m_Name
       value: Humanoid (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4422930592211056, guid: 24e9d61ab1b23194cb69e4630e686794, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180.00002
-      objectReference: {fileID: 0}
-    - target: {fileID: 114104770558936712, guid: 24e9d61ab1b23194cb69e4630e686794,
-        type: 2}
-      propertyPath: shootRange
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 114104770558936712, guid: 24e9d61ab1b23194cb69e4630e686794,
-        type: 2}
-      propertyPath: health
-      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24e9d61ab1b23194cb69e4630e686794, type: 2}
@@ -14538,16 +14509,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114104770558936712, guid: 24e9d61ab1b23194cb69e4630e686794,
-        type: 2}
-      propertyPath: coverLocationsEditor.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114104770558936712, guid: 24e9d61ab1b23194cb69e4630e686794,
-        type: 2}
-      propertyPath: patrolWaypointsEditor.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4422930592211056, guid: 24e9d61ab1b23194cb69e4630e686794, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.49
@@ -14579,11 +14540,6 @@ Prefab:
     - target: {fileID: 4422930592211056, guid: 24e9d61ab1b23194cb69e4630e686794, type: 2}
       propertyPath: m_RootOrder
       value: 26
-      objectReference: {fileID: 0}
-    - target: {fileID: 114104770558936712, guid: 24e9d61ab1b23194cb69e4630e686794,
-        type: 2}
-      propertyPath: customCover
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114104770558936712, guid: 24e9d61ab1b23194cb69e4630e686794,
         type: 2}
@@ -14623,44 +14579,6 @@ Prefab:
     - target: {fileID: 1198524467941778, guid: 24e9d61ab1b23194cb69e4630e686794, type: 2}
       propertyPath: m_Name
       value: Humanoid (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4422930592211056, guid: 24e9d61ab1b23194cb69e4630e686794, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90.00001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4422930592211056, guid: 24e9d61ab1b23194cb69e4630e686794, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114104770558936712, guid: 24e9d61ab1b23194cb69e4630e686794,
-        type: 2}
-      propertyPath: coverLocationsEditor.Array.data[4]
-      value: 
-      objectReference: {fileID: 943262531}
-    - target: {fileID: 114104770558936712, guid: 24e9d61ab1b23194cb69e4630e686794,
-        type: 2}
-      propertyPath: coverLocationsEditor.Array.data[5]
-      value: 
-      objectReference: {fileID: 102243175}
-    - target: {fileID: 114104770558936712, guid: 24e9d61ab1b23194cb69e4630e686794,
-        type: 2}
-      propertyPath: coverLocationsEditor.Array.data[6]
-      value: 
-      objectReference: {fileID: 1245608239}
-    - target: {fileID: 114104770558936712, guid: 24e9d61ab1b23194cb69e4630e686794,
-        type: 2}
-      propertyPath: coverLocationsEditor.Array.data[7]
-      value: 
-      objectReference: {fileID: 1935107236}
-    - target: {fileID: 114104770558936712, guid: 24e9d61ab1b23194cb69e4630e686794,
-        type: 2}
-      propertyPath: shootRange
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 114104770558936712, guid: 24e9d61ab1b23194cb69e4630e686794,
-        type: 2}
-      propertyPath: health
-      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24e9d61ab1b23194cb69e4630e686794, type: 2}
