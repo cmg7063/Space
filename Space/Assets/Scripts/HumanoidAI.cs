@@ -6,6 +6,9 @@ using UnityEditor.Animations;
 
 public class HumanoidAI : MonoBehaviour
 {
+    public List<GameObject> patrolWaypointsEditor = new List<GameObject>();
+    public List<GameObject> coverLocationsEditor = new List<GameObject>();
+
     private List<Vector3> patrolWaypoints = new List<Vector3>();
     private List<Vector3> coverLocations = new List<Vector3>();
 
@@ -18,7 +21,8 @@ public class HumanoidAI : MonoBehaviour
 
     //private List<Vector3> DebugRaysOrigin = new List<Vector3> ();
     //private List<Vector3> DebugRaysDirection = new List<Vector3> ();
-     
+
+    public bool customCover = false;
 
     public GameObject player;
     public GameObject healthBar;
@@ -73,14 +77,32 @@ public class HumanoidAI : MonoBehaviour
 
         healthBar.GetComponent<SpriteRenderer>().color = new Color( 20.0f / 255.0f, 184.0f / 255.0f, 1.0f );
 
-        foreach(GameObject waypoint in GameObject.FindGameObjectsWithTag("CoverWaypoint"))
-        {
-            coverLocations.Add( waypoint.transform.position );
+        player = GameObject.FindGameObjectWithTag( "Player" );
+
+        if( !customCover )
+        { 
+            foreach(GameObject waypoint in GameObject.FindGameObjectsWithTag("CoverWaypoint"))
+            {
+                coverLocations.Add( waypoint.transform.position );
+            }
         }
-        foreach( GameObject waypoint in GameObject.FindGameObjectsWithTag( "PatrolWaypoint" ) )
+        else
+        {
+            foreach( GameObject waypoint in coverLocationsEditor )
+            {
+                coverLocations.Add( waypoint.transform.position );
+            }
+        }
+
+        foreach( GameObject waypoint in patrolWaypointsEditor )
         {
             patrolWaypoints.Add( waypoint.transform.position );
         }
+        
+        //foreach( GameObject waypoint in GameObject.FindGameObjectsWithTag( "PatrolWaypoint" ) )
+        //{
+        //    patrolWaypoints.Add( waypoint.transform.position );
+        //}
     }
 
     void UpdateHealth()
@@ -601,11 +623,11 @@ public class HumanoidAI : MonoBehaviour
             {
                 Vector3 eye = new Vector3(
                     coverLocations[ i ].x,
-                    coverLocations[i].y + aiHeight, 
+                    coverLocations[i].y + aiHeight/2.0f, 
                     coverLocations[ i ].z);
 
                 Vector3 playerEye = player.transform.position;
-                playerEye.y = playerEye.y + playerHeight;
+                playerEye.y = playerEye.y + playerHeight/2.0f;
                 Vector3 direction = playerEye - eye;
                 
                 RaycastHit hit;

@@ -7,6 +7,7 @@ TagManager:
   - CoverWaypoint
   - PatrolWaypoint
   - DebugWaypoint
+  - HumanoidAI
   layers:
   - Default
   - TransparentFX
