@@ -13,7 +13,7 @@ public class Weapon : MonoBehaviour {
     //Impact Effect
     public GameObject impactEffect;
     //Weapon Damage
-    public float damage = 10f;
+    public float damage = 25.0f;
     //Weapon Range
     public float range = 100f;
     //Fire Rate
@@ -147,6 +147,11 @@ public class Weapon : MonoBehaviour {
             }
 
             Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+        }
+
+        if(hit.transform.tag == "HumanoidAI")
+        {
+            hit.transform.gameObject.GetComponentInParent<HumanoidAI>().TakeDamage( damage );
         }
     }
 }

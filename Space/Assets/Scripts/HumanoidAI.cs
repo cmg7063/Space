@@ -36,7 +36,8 @@ public class HumanoidAI : MonoBehaviour
     private float speed = 3.5f;
 
     private float debugTimer = 0.0f;
-    private float health = 100.0f;
+    [SerializeField]
+    public float health = 100.0f;
     private float healthBarWidth;
 
     //public Animator pAnimator;
