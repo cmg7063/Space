@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DestroyOnClear.cs" />
      <Compile Include="Assets\JFekb\Sci-Fi MEGA PACK\Resource\ZE_MagicSphereDemoGUI.cs" />
      <Compile Include="Assets\JFekb\Sci-Fi MEGA PACK\Resource\ZE_UVTextureAnimator.cs" />
      <Compile Include="Assets\Scripts\AgentMovement.cs" />
