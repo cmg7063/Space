@@ -38,6 +38,7 @@ public class HumanoidAI : MonoBehaviour
     private float debugTimer = 0.0f;
     [SerializeField]
     public float health = 100.0f;
+    private float originalHealth;
     private float healthBarWidth;
 
     //public Animator pAnimator;
@@ -68,6 +69,7 @@ public class HumanoidAI : MonoBehaviour
     {
         healthBarWidth = healthBar.GetComponent<SpriteRenderer>().sprite.rect.width;
         agent = GetComponent<NavMeshAgent>();
+        originalHealth = health;
         //pAnimator = GetComponentInChildren<Animator>();
         //Ensures raycast does not miss when checking line of sight from the top of the models
 
@@ -110,13 +112,13 @@ public class HumanoidAI : MonoBehaviour
     {
         Sprite temp = healthBar.GetComponent<SpriteRenderer>().sprite;
 
-        float newWidth = healthBarWidth * (health / 100.0f);
+        float newWidth = healthBarWidth * (health / originalHealth);
         temp = Sprite.Create( temp.texture, 
             new Rect( 0.0f, 0.0f, newWidth, temp.rect.height ), 
             new Vector2( 0.5f, 0.5f ), 100.0f );
         
         healthBar.GetComponent<SpriteRenderer>().sprite = temp;
-        if(health <= 33.3f)
+        if(health <= originalHealth/3.0f)
         {
             healthBar.GetComponent<SpriteRenderer>().color = new Color( 1.0f, 0.0f, 0.0f );
         }
