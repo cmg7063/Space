@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 23324772241643296}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: HumanoidAI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -331,8 +331,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1198524467941778}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.58, y: 1, z: 19.02}
+  m_LocalRotation: {x: -0, y: 0.70710576, z: -0, w: 0.7071079}
+  m_LocalPosition: {x: 0.49, y: 1.21, z: -28.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4975691532884340}
@@ -340,7 +340,7 @@ Transform:
   - {fileID: 4668696320767266}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
 --- !u!4 &4559766269391232
 Transform:
   m_ObjectHideFlags: 1
@@ -740,15 +740,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7057c6d815fa483449372441dab46c54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolWaypointsEditor: []
-  coverLocationsEditor: []
-  customCover: 0
+  patrolWaypointsEditor:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  coverLocationsEditor:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  customCover: 1
   player: {fileID: 0}
   healthBar: {fileID: 1677488228653536}
-  shootRange: 18
+  shootRange: 25
   alertRange: 40
   aiHeight: 1.9
   playerHeight: 1.9
+  health: 60
   state: 0
 --- !u!114 &114123401728653110
 MonoBehaviour:
