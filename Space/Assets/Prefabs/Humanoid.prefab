@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 114104770558936712}
   - component: {fileID: 114123401728653110}
   m_Layer: 0
-  m_Name: Melee Jumping
+  m_Name: Humanoid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
